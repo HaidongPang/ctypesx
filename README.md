@@ -35,4 +35,4 @@ uv build
 
 ## License
 
-A license has not been selected yet.
+`ctypesx` is licensed under the [MIT License](LICENSE).
