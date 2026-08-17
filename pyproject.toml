@@ -1,21 +1,47 @@
 [project]
 name = "ctypesx"
 version = "0.1.0"
-description = "Typed, checked, and declarative C data records built on Python's ctypes"
+description = "Typed, checked C values, records, pointers, and views built on Python's ctypes"
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]
 requires-python = ">=3.14"
 dependencies = []
+keywords = ["ctypes", "ffi", "abi", "typing", "c"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Typing :: Typed",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
 
 [project.urls]
 Homepage = "https://github.com/HaidongPang/ctypesx"
 Repository = "https://github.com/HaidongPang/ctypesx"
 Issues = "https://github.com/HaidongPang/ctypesx/issues"
+Documentation = "https://github.com/HaidongPang/ctypesx/tree/main/docs"
+Changelog = "https://github.com/HaidongPang/ctypesx/blob/main/CHANGELOG.md"
+Security = "https://github.com/HaidongPang/ctypesx/blob/main/SECURITY.md"
 
 [build-system]
 requires = ["uv_build>=0.12.0,<0.13.0"]
 build-backend = "uv_build"
+
+[tool.uv.build-backend]
+source-include = [
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "SECURITY.md",
+    "docs/**",
+    "examples/**",
+    "tests/**",
+    "typing_tests/**",
+    "uv.lock",
+]
 
 [dependency-groups]
 dev = [
@@ -28,7 +54,7 @@ addopts = "-ra"
 testpaths = ["tests"]
 
 [tool.pyright]
-include = ["src", "tests"]
+include = ["src", "tests", "typing_tests", "examples"]
 pythonVersion = "3.14"
 typeCheckingMode = "strict"
 reportUnnecessaryTypeIgnoreComment = "error"
