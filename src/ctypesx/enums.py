@@ -378,67 +378,67 @@ class _TypedIntegerValue(Generic[_IntegerT]):
 
 
 class S8Enum(_TypedIntegerValue[S8], CEnum, underlying=S8):
-    pass
+    """Base for closed enums stored as signed 8-bit integers."""
 
 
 class U8Enum(_TypedIntegerValue[U8], CEnum, underlying=U8):
-    pass
+    """Base for closed enums stored as unsigned 8-bit integers."""
 
 
 class S16Enum(_TypedIntegerValue[S16], CEnum, underlying=S16):
-    pass
+    """Base for closed enums stored as signed 16-bit integers."""
 
 
 class U16Enum(_TypedIntegerValue[U16], CEnum, underlying=U16):
-    pass
+    """Base for closed enums stored as unsigned 16-bit integers."""
 
 
 class S32Enum(_TypedIntegerValue[S32], CEnum, underlying=S32):
-    pass
+    """Base for closed enums stored as signed 32-bit integers."""
 
 
 class U32Enum(_TypedIntegerValue[U32], CEnum, underlying=U32):
-    pass
+    """Base for closed enums stored as unsigned 32-bit integers."""
 
 
 class S64Enum(_TypedIntegerValue[S64], CEnum, underlying=S64):
-    pass
+    """Base for closed enums stored as signed 64-bit integers."""
 
 
 class U64Enum(_TypedIntegerValue[U64], CEnum, underlying=U64):
-    pass
+    """Base for closed enums stored as unsigned 64-bit integers."""
 
 
 class CIntEnum(_TypedIntegerValue[CInt], CEnum, underlying=CInt):
-    pass
+    """Base for closed enums stored as native C ``int`` values."""
 
 
 class CSCharEnum(_TypedIntegerValue[CSChar], CEnum, underlying=CSChar):
-    pass
+    """Base for closed enums stored as native C ``signed char`` values."""
 
 
 class CUCharEnum(_TypedIntegerValue[CUChar], CEnum, underlying=CUChar):
-    pass
+    """Base for closed enums stored as native C ``unsigned char`` values."""
 
 
 class CShortEnum(_TypedIntegerValue[CShort], CEnum, underlying=CShort):
-    pass
+    """Base for closed enums stored as native C ``short`` values."""
 
 
 class CUShortEnum(_TypedIntegerValue[CUShort], CEnum, underlying=CUShort):
-    pass
+    """Base for closed enums stored as native C ``unsigned short`` values."""
 
 
 class CUIntEnum(_TypedIntegerValue[CUInt], CEnum, underlying=CUInt):
-    pass
+    """Base for closed enums stored as native C ``unsigned int`` values."""
 
 
 class CLongEnum(_TypedIntegerValue[CLong], CEnum, underlying=CLong):
-    pass
+    """Base for closed enums stored as native C ``long`` values."""
 
 
 class CULongEnum(_TypedIntegerValue[CULong], CEnum, underlying=CULong):
-    pass
+    """Base for closed enums stored as native C ``unsigned long`` values."""
 
 
 class CLongLongEnum(
@@ -446,7 +446,7 @@ class CLongLongEnum(
     CEnum,
     underlying=CLongLong,
 ):
-    pass
+    """Base for closed enums stored as native C ``long long`` values."""
 
 
 class CULongLongEnum(
@@ -454,15 +454,15 @@ class CULongLongEnum(
     CEnum,
     underlying=CULongLong,
 ):
-    pass
+    """Base for closed enums stored as native C ``unsigned long long`` values."""
 
 
 class CSizeEnum(_TypedIntegerValue[CSize], CEnum, underlying=CSize):
-    pass
+    """Base for closed enums stored as native C ``size_t`` values."""
 
 
 class CSSizeEnum(_TypedIntegerValue[CSSize], CEnum, underlying=CSSize):
-    pass
+    """Base for closed enums stored as native C ``ssize_t`` values."""
 
 
 class CIntPtrEnum(
@@ -470,7 +470,7 @@ class CIntPtrEnum(
     CEnum,
     underlying=CIntPtr,
 ):
-    pass
+    """Base for closed enums stored as native C ``intptr_t`` values."""
 
 
 class CUIntPtrEnum(
@@ -478,71 +478,71 @@ class CUIntPtrEnum(
     CEnum,
     underlying=CUIntPtr,
 ):
-    pass
+    """Base for closed enums stored as native C ``uintptr_t`` values."""
 
 
 class S8Flag(_TypedIntegerValue[S8], CFlag, underlying=S8):
-    pass
+    """Base for bit flags stored as signed 8-bit integers."""
 
 
 class U8Flag(_TypedIntegerValue[U8], CFlag, underlying=U8):
-    pass
+    """Base for bit flags stored as unsigned 8-bit integers."""
 
 
 class S16Flag(_TypedIntegerValue[S16], CFlag, underlying=S16):
-    pass
+    """Base for bit flags stored as signed 16-bit integers."""
 
 
 class U16Flag(_TypedIntegerValue[U16], CFlag, underlying=U16):
-    pass
+    """Base for bit flags stored as unsigned 16-bit integers."""
 
 
 class S32Flag(_TypedIntegerValue[S32], CFlag, underlying=S32):
-    pass
+    """Base for bit flags stored as signed 32-bit integers."""
 
 
 class U32Flag(_TypedIntegerValue[U32], CFlag, underlying=U32):
-    pass
+    """Base for bit flags stored as unsigned 32-bit integers."""
 
 
 class S64Flag(_TypedIntegerValue[S64], CFlag, underlying=S64):
-    pass
+    """Base for bit flags stored as signed 64-bit integers."""
 
 
 class U64Flag(_TypedIntegerValue[U64], CFlag, underlying=U64):
-    pass
+    """Base for bit flags stored as unsigned 64-bit integers."""
 
 
 class CIntFlag(_TypedIntegerValue[CInt], CFlag, underlying=CInt):
-    pass
+    """Base for bit flags stored as native C ``int`` values."""
 
 
 class CSCharFlag(_TypedIntegerValue[CSChar], CFlag, underlying=CSChar):
-    pass
+    """Base for bit flags stored as native C ``signed char`` values."""
 
 
 class CUCharFlag(_TypedIntegerValue[CUChar], CFlag, underlying=CUChar):
-    pass
+    """Base for bit flags stored as native C ``unsigned char`` values."""
 
 
 class CShortFlag(_TypedIntegerValue[CShort], CFlag, underlying=CShort):
-    pass
+    """Base for bit flags stored as native C ``short`` values."""
 
 
 class CUShortFlag(_TypedIntegerValue[CUShort], CFlag, underlying=CUShort):
-    pass
+    """Base for bit flags stored as native C ``unsigned short`` values."""
 
 
 class CUIntFlag(_TypedIntegerValue[CUInt], CFlag, underlying=CUInt):
-    pass
+    """Base for bit flags stored as native C ``unsigned int`` values."""
 
 
 class CLongFlag(_TypedIntegerValue[CLong], CFlag, underlying=CLong):
-    pass
+    """Base for bit flags stored as native C ``long`` values."""
 
 
 class CULongFlag(_TypedIntegerValue[CULong], CFlag, underlying=CULong):
-    pass
+    """Base for bit flags stored as native C ``unsigned long`` values."""
 
 
 class CLongLongFlag(
@@ -550,7 +550,7 @@ class CLongLongFlag(
     CFlag,
     underlying=CLongLong,
 ):
-    pass
+    """Base for bit flags stored as native C ``long long`` values."""
 
 
 class CULongLongFlag(
@@ -558,15 +558,15 @@ class CULongLongFlag(
     CFlag,
     underlying=CULongLong,
 ):
-    pass
+    """Base for bit flags stored as native C ``unsigned long long`` values."""
 
 
 class CSizeFlag(_TypedIntegerValue[CSize], CFlag, underlying=CSize):
-    pass
+    """Base for bit flags stored as native C ``size_t`` values."""
 
 
 class CSSizeFlag(_TypedIntegerValue[CSSize], CFlag, underlying=CSSize):
-    pass
+    """Base for bit flags stored as native C ``ssize_t`` values."""
 
 
 class CIntPtrFlag(
@@ -574,7 +574,7 @@ class CIntPtrFlag(
     CFlag,
     underlying=CIntPtr,
 ):
-    pass
+    """Base for bit flags stored as native C ``intptr_t`` values."""
 
 
 class CUIntPtrFlag(
@@ -582,4 +582,4 @@ class CUIntPtrFlag(
     CFlag,
     underlying=CUIntPtr,
 ):
-    pass
+    """Base for bit flags stored as native C ``uintptr_t`` values."""
